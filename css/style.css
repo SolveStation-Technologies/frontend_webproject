@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #222;
+  width: 100%;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: tomato;
+  text-decoration: overline;
+}
+
+.hero {
+  background-image: url(../image/technology-code-coding-computer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: goldenrod;
+  font-size: 5em;
+  text-shadow: 2px 3px #222;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+section {
+  padding: 15px;
+  text-align: justify;
+}
+
+#home {
+  background-color: aliceblue;
+}
+
+#about {
+  background-color: wheat;
+}
+
+#contact {
+  background-color: cadetblue;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
